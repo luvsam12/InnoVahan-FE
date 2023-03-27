@@ -53,10 +53,11 @@ const AskQuestion = ({setAnswer, loading, setLoading}) => {
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
+        setText(transcript ? transcript : text)
         setMicState(false);
         setLoading(true)
         setAnswer('')
-        askQuestion({question: transcript, source: 'input'}).then(response => {
+        askQuestion({question: text, source: 'input'}).then(response => {
             while(response.data.answer.includes("\n")){
                 response.data.answer = response.data.answer.replace("\n", "<br />")
             }
