@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import { AudioOutlined } from '@ant-design/icons';
+import { AudioOutlined, RightOutlined } from '@ant-design/icons';
 import './../styles/Faq.scss';
 import { useNavigate } from "react-router-dom";
 import { Empty, Spin } from 'antd';
@@ -88,6 +88,9 @@ function Faq() {
                                 <div className="faq-item" key={index} onClick={() => {goToChat(faq.question)}}>
                                     <div className="faq-question">
                                         {faq.question}
+                                    </div>
+                                    <div className="right-icon">
+                                        <RightOutlined />
                                     </div>
                                 </div>
                             )
