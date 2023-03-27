@@ -3,9 +3,12 @@
     flex-direction: column;
     height: 100%;
     .chat-box{
-        display: table-row; 
-        border: 1px solid black;
-        border-radius: 10px;
         height: 73vh;
+        margin: 20px 0;
+        margin-bottom: 20px;
+        padding: 30px 50px;
+        text-align: inherit;
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
     }
 }
