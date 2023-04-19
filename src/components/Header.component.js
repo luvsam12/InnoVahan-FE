@@ -48,7 +48,7 @@ function Header() {
   return (
     <div className="chat-page-header-container">
         <div className="logo-container">
-            <a href="http://localhost:3000">
+            <a href="http://13.232.89.81:3000">
               <img className="vahan-logo vahan" alt="vahan" src="/vahan-final-logo-black.png" />
             </a>
         </div>
