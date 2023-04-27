@@ -74,11 +74,8 @@ function Faq() {
             <div className='input-text'>
                 Ask your question
             </div>
-            <div className='mic' >
-                <AudioOutlined></AudioOutlined>
-            </div>
-
         </div>
+        
         <div className="faq-box">
             {
                 faqList || faqList.length === 0 ? 
