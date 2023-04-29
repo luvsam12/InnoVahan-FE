@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react"
-import { AudioOutlined, RightOutlined } from '@ant-design/icons';
+import { SendOutlined } from '@ant-design/icons';
 import './../styles/Faq.scss';
 import { useNavigate } from "react-router-dom";
 import { Empty, Spin } from 'antd';
@@ -45,7 +45,7 @@ function Faq() {
                                         {faq.question}
                                     </div>
                                     <div className="right-icon">
-                                        <RightOutlined />
+                                        <SendOutlined />
                                     </div>
                                 </div>
                             )
