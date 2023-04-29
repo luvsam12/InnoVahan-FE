@@ -6,10 +6,36 @@
         height: 73vh;
         margin: 20px 0;
         margin-bottom: 20px;
-        padding: 30px 50px;
         text-align: inherit;
-        background: rgba(0, 0, 0, 0.05);
         border-radius: 4px;
         overflow-y: scroll;
+        .chat-item{
+            margin: 10px 0;
+            .chat-question{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .question-text-box{
+                    background-color: #f7f7f7;
+                    margin-left: 10px;
+                    width: 73%;
+                    padding: 10px;
+                    border-radius: 20px 20px 20px 0px;
+                }
+            }
+            .chat-answer{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: end;
+                .answer-text-box{
+                    background-color: #f9e7cb;
+                    margin-right: 10px;
+                    width: 73%;
+                    padding: 10px;
+                    border-radius: 20px 20px 0px 20px;
+                }
+            }
+        }
     }
 }
