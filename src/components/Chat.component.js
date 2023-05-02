@@ -30,13 +30,13 @@ function Chat() {
                   {
                     item.type === 'question' ?
                     <div className="chat-question">
-                      <Avatar icon={<UserOutlined />} />
                       <div className="question-text-box" dangerouslySetInnerHTML={{ __html: item.text }}></div>
+                      <Avatar icon={<UserOutlined />} />
                     </div>
                     :
                     <div className="chat-answer">
-                      <div className="answer-text-box" dangerouslySetInnerHTML={{ __html: item.text }}></div> 
                       <Avatar icon={<UserOutlined />} />
+                      <div className="answer-text-box" dangerouslySetInnerHTML={{ __html: item.text }}></div> 
                   </div>
                        
                   }

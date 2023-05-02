@@ -23,7 +23,7 @@ const AskQuestion = ({ setLoading, chat, setChat }) => {
                 }
                 const nextChat = [
                     ...chat, 
-                    {type: 'question', text: text}, 
+                    {type: 'question', text: question}, 
                     {type: 'answer', text: response.data.answer}
                 ]
                 setChat(nextChat)

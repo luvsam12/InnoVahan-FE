@@ -15,12 +15,13 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+                justify-content: end;
                 .question-text-box{
                     background-color: #f7f7f7;
-                    margin-left: 10px;
-                    width: 73%;
+                    margin-right: 10px;
+                    max-width: 73%;
                     padding: 10px;
-                    border-radius: 20px 20px 20px 0px;
+                    border-radius: 20px 20px 0px 20px;
                     word-wrap: break-word;
                 }
             }
@@ -28,13 +29,12 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                justify-content: end;
                 .answer-text-box{
                     background-color: #f9e7cb;
-                    margin-right: 10px;
-                    width: 73%;
+                    margin-left: 10px;
+                    max-width: 73%;
                     padding: 10px;
-                    border-radius: 20px 20px 0px 20px;
+                    border-radius: 20px 20px 20px 0px;
                     word-wrap: break-word;
                 }
             }
